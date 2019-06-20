@@ -752,7 +752,7 @@
         }
     },
     "Resources": {
-        "SchedulerPolicy": {
+        "Acct-SchedulerPolicy": {
             "Type": "AWS::IAM::Policy",
             "Metadata": {
                 "cfn_nag": {
@@ -765,7 +765,7 @@
                 }
             },
             "Properties": {
-                "PolicyName": "SchedulerPolicy",
+                "PolicyName": "Acct-SchedulerPolicy",
                 "Roles": [
                     {
                         "Ref": "SchedulerRole"
@@ -1265,7 +1265,7 @@
                 "Description": "EC2 and RDS instance scheduler, version %version%"
             },
             "DependsOn": [
-                "SchedulerPolicy"
+                "Acct-SchedulerPolicy"
             ]
         },
         "SchedulerInvokePermission": {
